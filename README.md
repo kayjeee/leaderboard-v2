@@ -1,10 +1,9 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="todolist.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Webpack-Todolist README Template</b></h3>
+  <h3><b>LeaderBoard README Template</b></h3>
 
 </div>
 
@@ -34,11 +33,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [webpack-todolist] <a name="about-project"></a>
+# 📖 [LeaderBoard] <a name="about-project"></a>
 
 > Welcome to the Todo List project! This project is a simple web application that allows you to create and manage your daily tasks. Here's how you can get started:
 
-**[webpack-todolist]** is a project done by a microverse student that can be used as a webpack starter
+**[LeaderBoard]** is a project done by a microverse student that can be used as a webpack starter
 ## 🛠 Built With <a name="built-with"></a>
 
 html
@@ -73,9 +72,8 @@ Since this project is a front-end application, the focus is on the presentation 
 
 > Desciption
 
-- **[Task Management: Add, complete, and delete tasks as needed to stay organized.]**
 - **[Responsive Design: Enjoy a seamless experience across all devices and screen sizes]**
-- **[Local Storage: All tasks are saved locally in the browser,]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +83,7 @@ Since this project is a front-end application, the focus is on the presentation 
 
 > the link to the deployed project.
 
-- [Live Demo Link](https://kayjeee.github.io/webpack-todolist/)
+-N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +91,7 @@ Since this project is a front-end application, the focus is on the presentation 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
->Welcome to the Todo List project! This project is a simple web application that allows you to create and manage your daily tasks. Here's how you can get started:
+>Welcome to the LeaderBoard project! This project is a simple web application that has a wireframe of a game:
 
 To get a local copy up and running, follow these steps.
 

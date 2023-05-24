@@ -1,9 +1,9 @@
 // Hard-coded data
 const hardcodedData = [
-  'Item 1',
-  'Item 2',
-  'Item 3',
-  'Item 4',
+  'name 1',
+  'mame 2',
+  'name 3',
+  'name 4',
 
 ];
 
