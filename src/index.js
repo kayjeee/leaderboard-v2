@@ -1,4 +1,9 @@
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.
+import 'bootstrap';
+
+// Your remaining JavaScript code goes here
+
 // Import modules
 import { fetchData, renderList } from '../modules/utils.js';
 // Import modules
