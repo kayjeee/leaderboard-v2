@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Index Page</title>
+    <link rel="stylesheet" href="dist/main.css">
+
 </head>
 <body>
     <div class="container">
         <h1>LeaderBoard</h1>
         <section class="grid">
             <div class="grid-item">
-                <h2>Recent scores</h2>
-                <button id="btn">Refresher</button>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">Recent scores</h2>
+                    <div class="ms-3">
+                        <button id="btn" class="btn btn-primary">Refresher</button>
+                    </div>
+                </div>
+            
                 <div class="list-container">
                     <ul id="list">
                         <li>name 1</li>
@@ -26,16 +33,19 @@
             <div class="grid-item right">
                 <h2>Add your score </h2>
                 <form id="form">
-                    <label for="input1"></label>
-                                 
-<input type="text" id="input1" name="input1" placeholder="Your name" required>
-                    <label for="input2"></label>
-                    <input type="password" id="input2" name="input2" placeholder="your score" required>
+                    <div class="input-container">
+                  
+                        <input type="text" id="input1" name="input1" placeholder="Enter text" required>
+                    </div>
+                    <div class="input-container">
+             
+                        <input type="password" id="input2" name="input2" placeholder="Enter password" required>
+                    </div>
                     <input type="submit" value="Submit" class="submit-button">
-                
                 </form>
             </div>
         </section>
     </div>
+    <script src="dist/main.js" type="module"></script>
 </body>
 </html>

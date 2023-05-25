@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Index Page</title>
+    <link rel="stylesheet" href="dist/main.css">
+
 <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 <body>
     <div class="container">
-        <h1>Heading</h1>
+        <h1>LeaderBoard</h1>
         <section class="grid">
-          <div class="grid-item">
-            <h2>Left Part</h2>
-            <button id="btn">Button</button>
-            <ul id="list"></ul>
-          </div>
             <div class="grid-item">
-                <h2>Right Part</h2>
-                <form>" 
-                    <label for="input1">Input 1:</label>
-                    <input type="text" id="input1" name="input1required>
-                    <label for="input2">Input 2:</label>
-                    <input type="password" id="input2" name="input2" required>
-                    <input type="submit" value="Submit">
+                <h2>Recent scores</h2>
+                <button id="btn">Refresher</button>
+                <div class="list-container">
+                    <ul id="list">
+                        <li>name 1</li>
+                        <li>name 2</li>
+                        <li>name 3</li>
+                        <li>name 4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-item right">
+                <h2>Add your score </h2>
+                <form id="form">
+                    <div class="input-container">
+                        <label for="input1">Input 1:</label>
+                        <input type="text" id="input1" name="input1" placeholder="Enter text" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="input2">Input 2:</label>
+                        <input type="password" id="input2" name="input2" placeholder="Enter password" required>
+                    </div>
                 </form>
             </div>
         </section>
     </div>
+    <script src="dist/main.js" type="module"></script>
 </body>
 </html>
