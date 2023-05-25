@@ -14,8 +14,13 @@
         <h1>LeaderBoard</h1>
         <section class="grid">
             <div class="grid-item">
-                <h2>Recent scores</h2>
-                <button id="btn">Refresher</button>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">Recent scores</h2>
+                    <div class="ms-3">
+                        <button id="btn" class="btn btn-primary">Refresher</button>
+                    </div>
+                </div>
+            
                 <div class="list-container">
                     <ul id="list">
                         <li>name 1</li>
@@ -29,13 +34,14 @@
                 <h2>Add your score </h2>
                 <form id="form">
                     <div class="input-container">
-                        <label for="input1">Input 1:</label>
-                        <input type="text" id="input1" name="input1" placeholder="Enter text" required>
+                  
+                        <input type="text" id="input1" name="user" placeholder="Enter name" required>
                     </div>
                     <div class="input-container">
-                        <label for="input2">Input 2:</label>
-                        <input type="password" id="input2" name="input2" placeholder="Enter password" required>
+             
+                        <input type="number"  id="input2" name="score" placeholder="Enter score" required>
                     </div>
+                    <input type="submit" value="Submit" class="submit-button">
                 </form>
             </div>
         </section>
