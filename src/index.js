@@ -1,5 +1,5 @@
 import './style.css';
-import 'bootstrap/dist/css/bootstrap.
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
 // Your remaining JavaScript code goes here
