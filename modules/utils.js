@@ -1,7 +1,7 @@
 // Hard-coded data
 const hardcodedData = [
   'name 1',
-  'mame 2',
+  'name 2',
   'name 3',
   'name 4',
 
@@ -16,7 +16,6 @@ export async function fetchData() {
     // Return the hardcoded data
     return hardcodedData;
   } catch (error) {
-    console.log('Error:', error);
     return [];
   }
 }
