@@ -83,7 +83,7 @@ body {
   background-color: hsla(39, 100%, 68%, 1);
   padding: 5px;
   animation-name: scoreAnimation;
-  animation-duration: 1s;remo
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
 
