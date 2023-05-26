@@ -82,11 +82,26 @@ body {
 .list li {
   background-color: hsla(39, 100%, 68%, 1);
   padding: 5px;
+  animation-name: scoreAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .list li:nth-child(odd) {
   background-color: #0692e4;
   color: #fff;
+}
+
+@keyframes scoreAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 h1 {
