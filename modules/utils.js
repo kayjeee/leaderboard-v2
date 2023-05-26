@@ -1,9 +1,9 @@
 // Hard-coded data
 const hardcodedData = [
-  'Item 1',
-  'Item 2',
-  'Item 3',
-  'Item 4',
+  'name 1',
+  'name 2',
+  'name 3',
+  'name 4',
 
 ];
 
@@ -16,7 +16,6 @@ export async function fetchData() {
     // Return the hardcoded data
     return hardcodedData;
   } catch (error) {
-    console.log('Error:', error);
     return [];
   }
 }
