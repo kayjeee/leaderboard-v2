@@ -1,3 +1,5 @@
+/* CSS for the page layout */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,21 +7,25 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  gap: 20px;
 }
 
 .grid-item {
   border: 1px solid black;
+}
+.left-column {
+  border: 1px solid #ccc;
+
   padding: 10px;
-  background-color: #f2f2f2;
 }
 
 .grid-item h2 {
@@ -108,6 +114,20 @@ h1 {
   margin-top: 0;
   margin-left: -24px;
   font-size: 56px;
+
+.array-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 10px;
 }
 
 button {
@@ -125,7 +145,11 @@ input[type="password"] {
 input[type="submit"] {
   background-color: #59d45e;
   color: white;
+}
+.submit-btn {
   padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
