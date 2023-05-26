@@ -1,3 +1,5 @@
+/* CSS for the page layout */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,94 +7,44 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  gap: 20px;
 }
 
-.grid-item {
-  border: 1px solid black;
+.left-column {
+  border: 1px solid #ccc;
   padding: 10px;
-  background-color: #f2f2f2;
 }
 
-.grid-item h2 {
-  display: inline-block;
-  margin-right: 10px;
-  height: 50px;
-  font-size: 40px;
-}
-
-.grid-item.right {
-  text-align: left;
-}
-
-.grid-item.right form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.grid-item.right form label {
-  width: 100%;
-}
-
-.grid-item.right form .submit-button {
-  margin-left: 251px;
-  padding-right: 15px;
-}
-
-.list-container {
-  border: 1px solid black;
-  padding: 10px;
-  overflow: auto;
-}
-
-#list {
-  display: grid;
-  grid-gap: 10px;
+.array-list {
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-#list li {
-  background-color: #f2f2f2;
-  padding: 5px;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-#list li:nth-child(odd) {
-  background-color: #000;
-  color: #fff;
-}
-
-h1 {
-  margin-top: 0;
-  margin-left: -24px;
-  font-size: 56px;
-}
-
-button {
+.form-input {
   margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="password"] {
-  width: 85%;
-  padding: 5px;
-  margin-bottom: 2px;
-  margin-top: 25px;
-}
-
-input[type="submit"] {
-  background-color: #59d45e;
-  color: white;
+.submit-btn {
   padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
+
+/* Other CSS styles as needed */
