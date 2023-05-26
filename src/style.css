@@ -110,10 +110,6 @@ h1 {
   font-size: 56px;
 }
 
-button {
-  margin-bottom: 10px;
-}
-
 input[type="text"],
 input[type="password"] {
   width: 85%;
