@@ -1,34 +1,51 @@
 // Hard-coded data
-const hardcodedData = [
-  'name 1',
-  'name 2',
-  'name 3',
-  'name 4',
+const id = '4VTktI4QNjjFNJHbf4k1';
+const API = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:${id}/scores`;
 
-];
-
-// Fetch data function
-export async function fetchData() {
+export const addmyScore = async (player) => {
   try {
-    // Simulate asynchronous data fetching
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const response = await fetch(API, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(player),
+    });
 
-    // Return the hardcoded data
-    return hardcodedData;
+    // Check if the API request was successful
+    if (!response.ok) {
+      throw new Error('Failed to add score');
+    }
   } catch (error) {
+    // console.error('Error adding score:', error);
+    // Handle the error accordingly (e.g., show an error message to the user)
+  }
+};
+
+export const fetchmyScore = async () => {
+  try {
+    // Select the list element where the scores will be displayed
+    const listtable = document.querySelector('.list');
+
+    // URL for fetching the scores
+    const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/:4VTktI4QNjjFNJHbf4k1/scores';
+
+    // Fetch scores data from the API
+    const response = await fetch(url);
+    const { result } = await response.json();
+
+    // Iterate through each player's score and display it in a new list item
+    result.forEach((gamer) => {
+      const newrow = document.createElement('li');
+      newrow.textContent = `${gamer.user} : ${gamer.score}`;
+      listtable.appendChild(newrow);
+    });
+
+    // Return the fetched data
+    return result;
+  } catch (error) {
+    // Handle errors, log the error to the console, and return an empty array
+    // console.error('Error fetching scores:', error);
     return [];
   }
-}
-
-// Render list function
-export function renderList(data, listElement) {
-  // Clear list
-  listElement.innerHTML = '';
-
-  // Iterate over data and create list items
-  data.forEach((item) => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    listElement.appendChild(li);
-  });
-}
+};

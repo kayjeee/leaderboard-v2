@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/kayjeee/webpack-todolist/issues"
   },
-  "homepage":"https://kayjeee.github.io/webpack-todolist/dist",
+  "homepage": "https://kayjeee.github.io/webpack-todolist/dist",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "babel-eslint": "^10.1.0",
@@ -40,6 +40,9 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.7.0",
+    "lodash": "^4.17.21",
+    "popper.js": "^1.16.1"
   }
 }
