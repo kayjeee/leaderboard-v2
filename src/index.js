@@ -21,12 +21,4 @@ btn.addEventListener('click', async () => {
 // Form submit event listener
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
-  // Get input values
-  const input1Value = document.getElementById('input1').value;
-  const input2Value = document.getElementById('input2').value;
-
-  // Perform form submission logic here
-  console.log('Input 1:', input1Value);
-  console.log('Input 2:', input2Value);
 });
